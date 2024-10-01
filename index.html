@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: rgba(27, 71, 112, 0.682); 
+        font-family: 'Jost', sans-serif; 
+      }
+      .header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; 
+        background-image: url('/imagens/fundo.jpg');
+        background-size: cover; 
+        background-position: center; 
+        padding: 50px 0; 
+        border-radius: 10px; 
+        width: 100%; 
+      }
+      .title {
+        border-bottom: 2px solid black;
+        font-size: 4rem;
+        color: white; 
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 3px;
+        backdrop-filter: blur(8px);
+        font-family: 'Rubik Mono One', sans-serif; 
+        position: relative; 
+        z-index: 1; 
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+      }
+      .card {
+        border-radius: 10px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px; 
+        width: 620px; 
+        margin-bottom: 20px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+      }
+      .info {
+        text-align: center;
+        font-size: larger;
+      }
+      img {
+        margin-bottom: 20px; 
+        width: 100px; 
+      }
+      .instagram-box {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        background-color: black; 
+        border-radius: 5px;
+        padding: 5px 10px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        text-decoration: none; 
+        color: white; 
+      }
+      .instagram-box img {
+        width: 20px; 
+        margin-right: 5px; 
+        align-self: center; 
+      }
+      @media (max-width: 768px) {
+        .title {
+          font-size: 3rem; 
+          max-width: 80%; 
+        }
+        .card {
+          width: 100%; 
+          padding: 20px; 
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container-fluid header p-md-5 p-2 col-12">
+        <p class="title">Marcas</p>
+      </div>
+      <div class="container-sm content mx-auto p-5">
+        <div class="col-md-6 container-md card mx-auto p-4">
+          <img
+            src="/imagens/high.webp"
+            alt="logo da high"
+          />
+          <p class="info">A HIGH é uma marca brasileira de streetwear que se destaca pela estética ousada e contemporânea. Focada na cultura urbana, a marca oferece peças autênticas que refletem criatividade e conexão com o público jovem.</p>
+          <a href="https://www.instagram.com/highcompany?" class="instagram-box">
+            <img src="/imagens/insta.png" alt="Instagram Logo">@highcompany</a>
+        </div>
+        <div class="col-md-6 container-md card mx-auto p-4">
+          <img
+            src="/imagens/corteiz.png"
+            alt="logo da corteiz"
+          />
+          <p class="info">A Corteiz é uma marca emergente de streetwear, originária de Londres, conhecida por sua estética urbana e designs ousados. Focada na cultura de rua, a marca cria uma forte conexão com seus fãs por meio de redes sociais.</p>
+          <a href="https://www.instagram.com/corteiz?" class="instagram-box">
+            <img src="/imagens/insta.png" alt="Instagram Logo">@Corteiz</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
